@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link href="styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="menu.html">Menu</a></li>
-      </ul>
-    </nav>
-    <h1>Find out what we are about!</h1>
-    <p>lorem ipsum</p>
-    <h2>Contact Us!</h2>
-    <form action="" method="post" id="contactusform">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+    </ul>
+  </nav>
+  <h1>Find out what we are about!</h1>
+  <p>lorem ipsum</p>
+  <h2>Contact Us!</h2>
+  <form action="" method="post" id="contactusform">
+    <fieldset>
+      <legend>Personal Information:</legend>
       <label>First Name: <input type="text" name="fname" /> </label><br />
       <label>Last Name: <input type="text" name="lname" /> </label><br />
       <label>Phone: <input type="tel" name="phone" /> </label><br />
       <label>Email: <input type="email" name="email" /> </label><br />
+
+      </fieldest> <br>
       <label>Reason for communication:
         <select name="commenttype">
           <optgroup label="Feedback">
-            <option value=""comment">Comment</option>
+            <option value="comment">Comment</option>
+            <option value="complaint">Complaint</option>
+            <option value="compliment">Compliment</option>
+          </optgroup>
+          <optgroup label="" Request">
+            <option value="catering">Catering</option>
+            <option value="suggestion">Suggestion</option>
           </optgroup>
         </select>
       </label>
+      <label>Comments:
+        <textarea name="comment" rows="7" cols="30">
+        </textarea>
+      </label>
       <input type="submit" value="Submit" />
-      <input type="reset" value="Clear"
-    </form>
-  </body>
+      <input type="reset" value="Clear" </form>
+</body>
+
 </html>
