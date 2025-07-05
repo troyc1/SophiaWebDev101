@@ -22,30 +22,32 @@
     <fieldset>
       <legend>Personal Information:</legend>
       <label>First Name: <input type="text" name="fname" /> </label><br />
-      <label>Last Name: <input type="text" name="lname" /> </label><br />
+      <label>Last Name: <input type="text" name="lname" required /> </label><br />
       <label>Phone: <input type="tel" name="phone" /> </label><br />
-      <label>Email: <input type="email" name="email" /> </label><br />
-
-      </fieldest> <br>
-      <label>Reason for communication:
-        <select name="commenttype">
-          <optgroup label="Feedback">
-            <option value="comment">Comment</option>
-            <option value="complaint">Complaint</option>
-            <option value="compliment">Compliment</option>
-          </optgroup>
-          <optgroup label="" Request">
-            <option value="catering">Catering</option>
-            <option value="suggestion">Suggestion</option>
-          </optgroup>
-        </select>
-      </label>
-      <label>Comments:
-        <textarea name="comment" rows="7" cols="30">
+      <label>Email: <input type="email" name="email" required /> </label><br />
+    </fieldset><br>
+    <label>How many days a week do you visit the shop?:
+      <input type="number" min="0" max="7" required>
+    </label>
+    <label>Reason for communication:
+      <select name="commenttype">
+        <optgroup label="Feedback">
+          <option value="comment">Comment</option>
+          <option value="complaint">Complaint</option>
+          <option value="compliment">Compliment</option>
+        </optgroup>
+        <optgroup label="Request">
+          <option value="catering">Catering</option>
+          <option value="suggestion">Suggestion</option>
+        </optgroup>
+      </select>
+    </label>
+    <label>Comments:
+      <textarea name="comment" rows="7" cols="30" required>
         </textarea>
-      </label>
-      <input type="submit" value="Submit" />
-      <input type="reset" value="Clear" </form>
+    </label>
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Clear" </form>
 </body>
 
 </html>
